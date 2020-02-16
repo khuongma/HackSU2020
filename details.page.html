@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/alltodo"></ion-back-button>
+    </ion-buttons>
+    <ion-title>MO-MED LIST </ion-title>
+
+    <ion-buttons slot="secondary">
+        <ion-button fill="outline" shape="round" (click)="takePicture()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+    <img [src]="currentImage" *ngIf="currentImage">
+
+  <form class="detailForm" (ngSubmit)="detailForm()">
+  <ion-list lines="full">
+
+    <ion-item>
+      <ion-input required type="text" placeholder="Medication Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <span *ngIf="show">Quantity</span>
+      <ion-icon name="chevron-down-outline" fill="outline" shape="round" clear slot="start" (click)="decrement()"></ion-icon>
+        <ion-input required type="number" placeholder={{currentNumber}}></ion-input>
+      <ion-icon name="chevron-up-outline" fill="outline" shape="round" clear slot="end" (click)="increment()"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-input required type="text" placeholder="Medication Name"></ion-input>
+    </ion-item>
+      
+    <ion-item>
+      <ion-input required type="text" placeholder="Directions"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-input required type="text" placeholder="Notes"></ion-input>
+      </ion-item>
+
+    <ion-button color="primary" type="submit"> test </ion-button>
+
+  </ion-list>
+
+ 
+
+  <!-- <ion-button (click)="check()" color="success" [hidden]=ishidden> Or take a pictre instead?</ion-button> -->
+
+</form>
+</ion-content>
