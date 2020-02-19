@@ -1,0 +1,7 @@
+{
+  "name": "HACKSU2020final",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
