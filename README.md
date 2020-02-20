@@ -28,7 +28,7 @@ Currently only deployable on android devices.
 ## Built With
 
 * [Ionic](https://ionicframework.com) - The framework used
-* [Microsoft OCR API](https://azure.microsoft.com/en-us/services/cognitive-services/) - API used
+* [Microsoft OCR](https://azure.microsoft.com/en-us/services/cognitive-services/) - API used
 * [Firebase](https://firebase.google.com/?gclid=CjwKCAiA1rPyBRAREiwA1UIy8Csyf3EE2yIbkCMkV9YQaZHYkxPhwbIlNrNde0lXAXKAex8ti3-3BxoCr_0QAvD_BwE) - Database used
 * [Node.js](https://nodejs.org/en/docs/) - Framework, used for API
 * [TypeScript](https://www.typescriptlang.org/docs/home.html) - A superset of JavaScript 
